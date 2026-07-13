@@ -3,7 +3,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Clock, Star } from 'lucide-react';
 
 const destinations = [
@@ -82,14 +81,7 @@ export default function PopularDestinations() {
                     </div>
                   </div>
 
-                  <div className="flex gap-2">
-                    <Link
-                      href={`/tours/${dest.slug}`}
-                      className="flex-1 btn-navy text-center text-sm py-2 px-3"
-                    >
-                      Explore
-                    </Link>
-                  </div>
+
                 </div>
               </div>
             </motion.div>
