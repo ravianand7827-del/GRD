@@ -1,9 +1,9 @@
 # Netlify configuration for the frontend application
 
 [build]
-  base    = "frontend"      # Netlify will run the build command in this directory
-  command = "npm run build" # The command to build your Next.js app
-  publish = "frontend/.next"  # The directory that contains the built site
+  base    = "frontend"
+  command = "npm run build"
+  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs" # Essential plugin for Next.js sites on Netlify
