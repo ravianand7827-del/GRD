@@ -4,10 +4,10 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Clock, Star, ArrowRight } from 'lucide-react';
+import { Clock, Star } from 'lucide-react';
 
 const destinations = [
-  { name: 'Kashmir', slug: 'kashmir-paradise-tour', image: 'https://images.unsplash.com/photo-1566837945700-30057527ade0?w=600&q=80', duration: '7D/6N', rating: 4.9 },
+  { name: 'Kashmir', slug: 'kashmir-paradise-tour', image: 'https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600&q=80', duration: '7D/6N', rating: 4.9 },
   { name: 'Manali', slug: 'manali-adventure-tour', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80', duration: '5D/4N', rating: 4.8 },
   { name: 'Goa', slug: 'goa-beach-holiday', image: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80', duration: '5D/4N', rating: 4.7 },
   { name: 'Kerala', slug: 'kerala-backwaters-escape', image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80', duration: '6D/5N', rating: 4.9 },
@@ -33,7 +33,6 @@ export default function PopularDestinations() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="text-brand-gold font-medium text-sm uppercase tracking-widest">Explore India & Beyond</span>
           <h2 className="section-title text-brand-navy dark:text-white mt-2">
             Popular <span className="gold-text">Destinations</span>
           </h2>
@@ -88,13 +87,7 @@ export default function PopularDestinations() {
                       href={`/tours/${dest.slug}`}
                       className="flex-1 btn-navy text-center text-sm py-2 px-3"
                     >
-                      Book Now
-                    </Link>
-                    <Link
-                      href={`/tours/${dest.slug}`}
-                      className="flex items-center gap-1 px-3 py-2 border border-brand-gold text-brand-gold rounded-full text-sm hover:bg-brand-gold hover:text-brand-navy transition-all"
-                    >
-                      <ArrowRight size={14} />
+                      Explore
                     </Link>
                   </div>
                 </div>

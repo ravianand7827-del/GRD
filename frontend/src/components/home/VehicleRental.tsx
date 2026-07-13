@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Users, IndianRupee, ArrowRight, CheckCircle } from 'lucide-react';
+import { Users, ArrowRight, CheckCircle } from 'lucide-react';
 
 const vehicles = [
   {
@@ -106,13 +106,6 @@ export default function VehicleRental() {
                     ))}
                   </div>
                   <div className="flex items-center justify-between mb-3">
-                    <div>
-                      <span className="text-xs text-gray-400">Starting</span>
-                      <div className="flex items-center gap-0.5 font-bold text-brand-navy dark:text-white">
-                        <IndianRupee size={13} />
-                        <span>{vehicle.pricePerKm}/km</span>
-                      </div>
-                    </div>
                     <Link
                       href={`/vehicles/${vehicle.slug}`}
                       className="flex items-center gap-1 text-brand-gold text-sm font-medium hover:gap-2 transition-all"
