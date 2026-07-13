@@ -9,13 +9,6 @@ export const metadata: Metadata = {
   description: 'Learn about GRD Travels - Delhi\'s premier travel company with 15+ years of experience in tour packages and vehicle rental.',
 };
 
-const team = [
-  { name: 'Rajesh Kumar', role: 'Founder & CEO', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80' },
-  { name: 'Deepak Sharma', role: 'Operations Head', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80' },
-  { name: 'Priya Singh', role: 'Tour Manager', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80' },
-  { name: 'Amit Verma', role: 'Fleet Manager', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80' },
-];
-
 const milestones = [
   { year: '2009', event: 'GRD Travels founded in Delhi' },
   { year: '2012', event: 'Expanded fleet to 20+ vehicles' },
@@ -101,26 +94,6 @@ export default function AboutPage() {
                 </div>
                 <div className="w-4 h-4 rounded-full bg-brand-gold border-4 border-white dark:border-brand-navy-dark flex-shrink-0 z-10" />
                 <div className="flex-1" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-20 bg-white dark:bg-brand-navy">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="section-title text-brand-navy dark:text-white">Meet Our <span className="gold-text">Team</span></h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {team.map((member) => (
-              <div key={member.name} className="text-center group">
-                <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-brand-gold/20 group-hover:border-brand-gold transition-colors">
-                  <Image src={member.image} alt={member.name} fill className="object-cover" />
-                </div>
-                <h3 className="font-semibold text-brand-navy dark:text-white">{member.name}</h3>
-                <p className="text-brand-gold text-sm">{member.role}</p>
               </div>
             ))}
           </div>
